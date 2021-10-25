@@ -6,10 +6,13 @@ public class LaunchItem : MonoBehaviour
 {
 
     public Rigidbody2D rb; // Need to set to own RigidBody2D in editor
+    public Rigidbody2D point; // Need to set to RigidBody2D of sling shot in editor
 
     // Higher frequency should mean a lower releaseTime.
     // Default time of 0.15f works well with frequency of 1.5.
     public float releaseTime = 0.15f; // Time from mouse release to spring release
+
+    public float maxDragDistance = 2.0f; // Max pull distance from point
 
     private bool isGrabbed = false;
 
@@ -18,7 +21,11 @@ public class LaunchItem : MonoBehaviour
     {
         if(isGrabbed)
         {
-            rb.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (Vector3.Distance(mousePos, point.position) > maxDragDistance)
+                rb.position = point.position + (mousePos - point.position).normalized * maxDragDistance;
+            else
+                rb.position = mousePos;
         }
     }
 

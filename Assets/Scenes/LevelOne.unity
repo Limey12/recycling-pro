@@ -289,7 +289,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 236123991}
+  point: {fileID: 1864512481}
   releaseTime: 0.15
+  maxDragDistance: 2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
