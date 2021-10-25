@@ -43,5 +43,6 @@ public class LaunchItem : MonoBehaviour
         yield return new WaitForSeconds(releaseTime);
 
         GetComponent<SpringJoint2D>().enabled = false; // Release spring, not easily undone
+        this.enabled = false;
     }
 }
