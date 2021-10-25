@@ -16,7 +16,7 @@ public class LaunchItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isGrabbed)
+        if (isGrabbed)
         {
             rb.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
@@ -38,7 +38,7 @@ public class LaunchItem : MonoBehaviour
         StartCoroutine(Release());
     }
 
-    IEnumerator Release ()
+    IEnumerator Release()
     {
         yield return new WaitForSeconds(releaseTime);
 
