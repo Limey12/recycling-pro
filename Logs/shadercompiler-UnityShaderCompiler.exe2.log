@@ -1,4 +1,10 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
+Cmd: disassembleShader
+ name=Particles/Standard Unlit platform=d3d11 type=18 mask=6 insize=670 outsize=1559 ok=1
+
+Cmd: disassembleShader
+ name=Particles/Standard Unlit platform=d3d11 type=17 mask=6 insize=454 outsize=1116 ok=1
+
 Cmd: shutdown
