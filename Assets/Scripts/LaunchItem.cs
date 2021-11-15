@@ -14,6 +14,10 @@ public class LaunchItem : MonoBehaviour
 
     public float maxDistance = 2.0f; // Furthest distance the item can be dragged from the sling
 
+    public float spawnTime = 2.0f; // Time between release and next item spawn
+    
+    public GameObject nextObj; // Next item to spawn
+
     private bool isGrabbed = false;
 
     // Update is called once per frame
@@ -55,5 +59,15 @@ public class LaunchItem : MonoBehaviour
 
         GetComponent<SpringJoint2D>().enabled = false; // Release spring, not easily undone
         this.enabled = false;
+        
+        yield return new WaitForSeconds(spawnTime);
+        
+        if(nextObj != null)
+        {
+          nextObj.SetActive(true);
+        } else 
+        {
+          // Out of items, game over?
+        }
     }
 }
