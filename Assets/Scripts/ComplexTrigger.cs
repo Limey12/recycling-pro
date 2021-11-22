@@ -8,6 +8,7 @@ public class ComplexTrigger : MonoBehaviour
     //public UnityEvent onTriggerEnter;
     public string checkTag;
     public ParticleSystem ps;
+    public static int score = 0;
 
 
     void OnTriggerEnter2D(Collider2D other){
@@ -16,7 +17,9 @@ public class ComplexTrigger : MonoBehaviour
 
         //only trigger if the triggerBody matches
         if (other.gameObject.tag == checkTag){
+            score++;
             ps.Play();
+            Debug.Log(score);
         }
     }
 
