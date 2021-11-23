@@ -18,6 +18,9 @@ public class LaunchItem : MonoBehaviour
     
     public GameObject nextObj; // Next item to spawn
 
+    public GameObject returnB; // Buttons to spawn when no more items
+    public GameObject resultsB;
+
     private bool isGrabbed = false;
 
     // Update is called once per frame
@@ -67,7 +70,8 @@ public class LaunchItem : MonoBehaviour
           nextObj.SetActive(true);
         } else 
         {
-          // Out of items, game over?
+          returnB.SetActive(true);
+          resultsB.SetActive(true);
         }
     }
 }
