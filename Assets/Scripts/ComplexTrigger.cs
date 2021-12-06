@@ -20,7 +20,15 @@ public class ComplexTrigger : MonoBehaviour
             score++;
             ps.Play();
             Debug.Log(score);
+            other.gameObject.GetComponent<Renderer>().enabled = false;
+            other.gameObject.GetComponent<Collider2D>().enabled = false;
+            Destroy(other.gameObject.GetComponent<Rigidbody>());
         }
+    }
+    
+    void Awake()
+    {
+      score = 0;
     }
 
 }

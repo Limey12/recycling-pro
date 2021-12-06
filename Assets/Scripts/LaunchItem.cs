@@ -14,7 +14,7 @@ public class LaunchItem : MonoBehaviour
 
     public float maxDistance = 2.0f; // Furthest distance the item can be dragged from the sling
 
-    public float spawnTime = 2.0f; // Time between release and next item spawn
+    public float spawnTime = 1.0f; // Time between release and next item spawn
     
     public GameObject nextObj; // Next item to spawn
 

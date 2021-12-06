@@ -169,5 +169,7 @@ MonoBehaviour:
   sling: {fileID: 0}
   releaseTime: 0.15
   maxDistance: 2
-  spawnTime: 2
+  spawnTime: 1
   nextObj: {fileID: 0}
+  returnB: {fileID: 0}
+  resultsB: {fileID: 0}

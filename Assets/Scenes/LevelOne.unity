@@ -11481,6 +11481,10 @@ PrefabInstance:
       propertyPath: resultsB
       value: 
       objectReference: {fileID: 1030796036}
+    - target: {fileID: 7639136271080897574, guid: 6462be7755ce2cc43ad6172b6d947ce5, type: 3}
+      propertyPath: spawnTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7639136271080897575, guid: 6462be7755ce2cc43ad6172b6d947ce5, type: 3}
       propertyPath: m_Name
       value: glass_item
@@ -11550,6 +11554,10 @@ PrefabInstance:
       propertyPath: nextObj
       value: 
       objectReference: {fileID: 1905495574}
+    - target: {fileID: 7639136271080897574, guid: 6462be7755ce2cc43ad6172b6d947ce5, type: 3}
+      propertyPath: spawnTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7639136271080897575, guid: 6462be7755ce2cc43ad6172b6d947ce5, type: 3}
       propertyPath: m_Name
       value: paper_item
@@ -17830,6 +17838,10 @@ PrefabInstance:
       propertyPath: nextObj
       value: 
       objectReference: {fileID: 11641029}
+    - target: {fileID: 7639136271080897574, guid: 6462be7755ce2cc43ad6172b6d947ce5, type: 3}
+      propertyPath: spawnTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7639136271080897575, guid: 6462be7755ce2cc43ad6172b6d947ce5, type: 3}
       propertyPath: m_Name
       value: plastic_item
