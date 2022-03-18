@@ -23,6 +23,12 @@ public class LaunchItem : MonoBehaviour
 
     private bool isGrabbed = false;
 
+    public AudioClip stretch;
+
+    void Start()
+    {
+        GetComponent<AudioSource>().clip = stretch;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -45,6 +51,7 @@ public class LaunchItem : MonoBehaviour
     {
         isGrabbed = true;
         rb.isKinematic = true; // No longer effected by spring/gravity
+        GetComponent<AudioSource>().Play();
     }
 
     // OnMouseUp is called when item is released
@@ -52,7 +59,7 @@ public class LaunchItem : MonoBehaviour
     {
         isGrabbed = false;
         rb.isKinematic = false;
-
+        GetComponent<AudioSource>().Stop();
         StartCoroutine(Release());
     }
 
