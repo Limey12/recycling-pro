@@ -23,7 +23,7 @@ public class ComplexTrigger : MonoBehaviour
             score++;
             ps.Play();
             GetComponent<AudioSource>().Play();
-            Debug.Log(score);
+            //Debug.Log(score);
             other.gameObject.GetComponent<Renderer>().enabled = false;
             other.gameObject.GetComponent<Collider2D>().enabled = false;
             Destroy(other.gameObject.GetComponent<Rigidbody>());

@@ -8,7 +8,7 @@ public class ResetLevel : MonoBehaviour
     public void Reset ()
     {
         ComplexTrigger.score = 0;
-        Debug.Log(ComplexTrigger.score);
+        //Debug.Log(ComplexTrigger.score);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
