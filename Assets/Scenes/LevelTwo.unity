@@ -2206,6 +2206,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7639136269770606074, guid: 6462be7755ce2cc43ad6172b6d947ce5, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7639136271080897569, guid: 6462be7755ce2cc43ad6172b6d947ce5, type: 3}
       propertyPath: m_ConnectedRigidBody
       value: 
@@ -8784,6 +8788,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7639136269770606074, guid: 6462be7755ce2cc43ad6172b6d947ce5, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7639136271080897569, guid: 6462be7755ce2cc43ad6172b6d947ce5, type: 3}
       propertyPath: m_ConnectedRigidBody
       value: 
@@ -13757,6 +13765,10 @@ PrefabInstance:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 487041796}
+    - target: {fileID: 6183652661773361133, guid: 9af23409fba01064f80882be12a11142, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9af23409fba01064f80882be12a11142, type: 3}
 --- !u!1001 &1599301327
@@ -13846,6 +13858,10 @@ PrefabInstance:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 487041796}
+    - target: {fileID: 6183652661773361133, guid: 9af23409fba01064f80882be12a11142, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9af23409fba01064f80882be12a11142, type: 3}
 --- !u!1 &1616448122

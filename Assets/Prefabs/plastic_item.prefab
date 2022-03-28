@@ -151,7 +151,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.005
+  m_Distance: 8.732124
   m_DampingRatio: 0
   m_Frequency: 1.5
 --- !u!114 &7639136271080897574
@@ -168,9 +168,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 7639136269770606074}
   sling: {fileID: 0}
-  releaseTime: 0.15
+  lr: {fileID: 0}
   maxDistance: 2
   spawnTime: 1
+  maxSpeed: 15
+  stepCount: 100
   nextObj: {fileID: 0}
   returnB: {fileID: 0}
   resultsB: {fileID: 0}
